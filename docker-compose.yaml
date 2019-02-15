@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  apple:
+    image: newrelic.aftershipdemo.com 
+    ports:
+      - "3001:80"
+    environment:
+      - APP_NAME=apple
+  banana:
+    image: newrelic.aftershipdemo.com 
+    ports:
+      - "3002:80"
+    environment:
+      - APP_NAME=banana
+  orange:
+    image: newrelic.aftershipdemo.com
+    ports:
+      - "3003:80"
+    environment:
+      - APP_NAME=orange

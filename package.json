@@ -1,0 +1,27 @@
+{
+  "name": "distributedtracing.aftershipdemo.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AfterShip/distributedtracing.aftershipdemo.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AfterShip/distributedtracing.aftershipdemo.com/issues"
+  },
+  "homepage": "https://github.com/AfterShip/distributedtracing.aftershipdemo.com#readme",
+  "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "axios": "^0.18.0",
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0",
+    "newrelic": "^5.3.0"
+  }
+}
