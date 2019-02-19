@@ -1,3 +1,3 @@
 yarn install
-docker build . -t newrelic.aftershipdemo.com
+docker build . -t  pengzihe/newrelic.aftershipdemo.com
 docker-compose up

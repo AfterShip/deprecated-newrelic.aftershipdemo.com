@@ -30,6 +30,11 @@ exports.config = {
 		enabled: true,
 	},
 
+	error_collector: {
+		enabled: true,
+//		ignore_status_codes: ['405']
+	},
+
 	logging: {
 		/**
 		 * Level at which to log. 'trace' is most useful to New Relic when diagnosing
