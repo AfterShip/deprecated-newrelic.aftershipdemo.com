@@ -32,7 +32,7 @@ exports.config = {
 
 	error_collector: {
 		enabled: true,
-//		ignore_status_codes: ['405']
+		ignore_status_codes: ['403']
 	},
 
 	logging: {
