@@ -10,6 +10,10 @@
  const {
  	APP_NAME: APP_NAME = ''
  } = process.env;
+ 
+ const {
+        NEW_RELIC_LICENSE_KEY: NEW_RELIC_LICENSE_KEY = ''
+ } = process.env;
 
 exports.config = {
 	/**
@@ -20,7 +24,7 @@ exports.config = {
 	/**
 	 * Your New Relic license key.
 	 */
-	license_key: "xxx",
+	license_key: [`${NEW_RELIC_LICENSE_KEY}`],
 
 	distributed_tracing: {
 		enabled: true,
