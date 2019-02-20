@@ -2,21 +2,21 @@ version: '3'
 
 services:
   apple:
-    image: pengzihe/newrelic.aftershipdemo.com 
+    image: aftershipdemo/newrelic.aftershipdemo.com 
     ports:
       - "3001:80"
     environment:
       - APP_NAME=newrelic.aftershipdemo.com-apple
       - NEW_RELIC_LICENSE_KEY=xxx
   banana:
-    image: pengzihe/newrelic.aftershipdemo.com 
+    image: aftershipdemo/newrelic.aftershipdemo.com 
     ports:
       - "3002:80"
     environment:
       - APP_NAME=newrelic.aftershipdemo.com-banana
       - NEW_RELIC_LICENSE_KEY=xxx
   orange:
-    image: pengzihe/newrelic.aftershipdemo.com
+    image: aftershipdemo/newrelic.aftershipdemo.com
     ports:
       - "3003:80"
     environment:
