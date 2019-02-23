@@ -1,4 +1,4 @@
-require('newrelic');
+const newrelic = require('newrelic');
 const Koa = require('koa');
 const Router = require('koa-router');
 const axios = require('axios')
@@ -20,6 +20,7 @@ router.get('/', async (ctx, next) => {
 }).get('/url/:url', async (ctx, next) => {
   // ctx.router available
   console.log(ctx.params.url);
+  newrelic.recordMetric(`${APP_NAME}${ctx.params.url}`, new Date().getTime())
   let response = await axios.get("http://"+ctx.params.url)
     .then(function (response) {
       console.log("==============response=============")

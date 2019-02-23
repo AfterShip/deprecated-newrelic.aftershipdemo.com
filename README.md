@@ -3,10 +3,10 @@
 ### 准备清单
 
 - 获取 New Relic APM License Key
-- 安装 Docker https://docs.docker.com/install/ 
+- 安装 Docker https://docs.docker.com/install/
 - 安装 docker-compose https://docs.docker.com/compose/install/
 
-
+- 可选 安装locust 生产更多测试数据
 
 ### Git clone
 ```
@@ -38,3 +38,8 @@ http://localhost:3001/url/orange
 or
 
 http://localhost:3001/url/banana
+
+### 启动locust
+```
+locust -H http://localhost:3002
+```
